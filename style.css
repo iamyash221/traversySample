@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  /* overflow: hidden; */
+  width: 100%;
+}
+
+img {
+  max-width: 80%;
+}
+
+h1,
+h2 {
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: rgb(65, 159, 247);
+  min-height: 60px;
+  min-width: 100%;
+  padding: 0px 20px;
+}
+
+.navbar .logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navbar .container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: aquamarine;
+}
+
+.main-header {
+  background-color: rgb(31, 84, 133);
+  padding: 20px 20px;
+  min-width: 100%;
+}
+
+.main-header .container {
+  display: flex;
+  align-items: center;
+}
+
+.main-header h1 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+}
+
+.main-header p {
+  color: #fff;
+}
+
+.boxes {
+  margin-top: 20px;
+  /* padding: 0px 20px; */
+}
+
+.boxes .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.boxes .box {
+  background-color: rgb(17, 31, 78);
+  border-radius: 30px;
+  padding: 20px 20px;
+  margin: 0px 20px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.boxes .box h2 {
+  color: #fff;
+  /* font-size: 16px; */
+}
+
+.boxes .box i {
+  margin-right: 10px;
+}
+
+.boxes .box p {
+  color: #fff;
+}
+
+.main-footer .container {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.main-footer p {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(17, 31, 78);
+}
+
+@media (max-width: 768px) {
+  .main-header .container {
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+
+  .main-header img {
+    margin-top: 20px;
+  }
+
+  .main-header h1 {
+    text-align: center;
+  }
+
+  .boxes .container {
+    display: block;
+  }
+
+  .boxes .box {
+    margin-bottom: 20px;
+  }
+
+  .boxes .box h2,
+  p {
+    text-align: center;
+  }
+}
